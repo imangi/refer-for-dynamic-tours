@@ -1,0 +1,53 @@
+.wc-bookings-member-selector {
+
+	&__label {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 0.5rem;
+		font-weight: 500;
+		font-size: var(--wp--preset--font-size--small, 1.2rem);
+
+		label {
+			margin: 0 !important; // Override the default margin of 0.7em coming from the WC core blocktheme.css.
+		}
+	}
+
+	&__required-indicator {
+		opacity: 0.6;
+		font-size: 0.8em;
+	}
+
+	&__select-container {
+		position: relative;
+		width: 100%;
+
+		/** Experimental styles for the select element. */
+		&::after {
+			content: "\2039";
+			display: block;
+			position: absolute;
+			right: 0.7em;
+			top: 50%;
+			transform: translateY(-50%) rotate(-90deg);
+			color: inherit;
+			font-size: var(--wp--preset--font-size--large, 1.8rem);
+			font-weight: 300;
+			font-family: inherit;
+			line-height: 1;
+			pointer-events: none;
+		}
+	}
+
+	&__select {
+		border: 1px solid color-mix(in srgb, var(--wc-bookings--calendar--color) 80%, transparent);
+		color: currentColor;
+		background: transparent;
+		padding: 1em 0.6em;
+		width: 100%;
+
+		/** Experimental styles for the select element. */
+		appearance: none;
+		-webkit-appearance: none;
+	}
+}

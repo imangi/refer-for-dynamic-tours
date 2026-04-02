@@ -1,1 +1,0 @@
-# geodir_location_manager-v2

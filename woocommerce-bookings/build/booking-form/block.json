@@ -1,0 +1,23 @@
+{
+  "name": "woocommerce-bookings/booking-form",
+  "title": "Booking Form",
+  "description": "A wrapper block for booking form elements.",
+  "category": "woocommerce-product-elements",
+  "usesContext": [
+    "postId"
+  ],
+  "supports": {
+    "inserter": false,
+    "html": false
+  },
+  "keywords": [
+    "WooCommerce",
+    "Bookings"
+  ],
+  "textdomain": "woocommerce-bookings",
+  "render": "file:./render.php",
+  "apiVersion": 3,
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "editorScript": "file:./index.js",
+  "viewScriptModule": "file:./frontend.js"
+}

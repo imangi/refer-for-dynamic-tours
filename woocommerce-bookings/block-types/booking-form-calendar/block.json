@@ -1,0 +1,20 @@
+{
+	"name": "woocommerce-bookings/booking-form-calendar",
+	"title": "Booking Form Calendar",
+	"description": "Displays an interactive calendar for booking availability within the booking form.",
+	"category": "woocommerce-product-elements",
+	"usesContext": [ "postId" ],
+	"supports": {
+		"inserter": false,
+		"html": false,
+		"interactivity": true
+	},
+	"keywords": [ "WooCommerce", "Bookings" ],
+	"textdomain": "woocommerce-bookings",
+	"render": "file:./render.php",
+	"apiVersion": 3,
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"viewScriptModule": "file:./frontend.js",
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css"
+}
